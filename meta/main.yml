@@ -52,5 +52,5 @@ dependencies:
   # if you add dependencies to this list.
   - src: https://github.com/ig33kmor3/ansible-role-docker
     version: master
-    name: docker
+    name: ig33kmor3.docker
   
