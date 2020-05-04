@@ -1,11 +1,15 @@
 ---
 # defaults file for kubernetes
 
-# kubernetes package versions for all nodes
-kcli_version: 1.18.2-00
-k8s_version: 1.18.2
-k8s_environment: bare-metal
+# kubernetes package dep versions for all
+kubernetes_dep_version: 1.18.2-00
+kubernetes_version: 1.18.2
+kubernetes_environment: bare-metal
 
-# maseter default values
-cert_sans: ["k8s-master-001"]
+# master default values
+kubernetes_role: master
+certificate_sans: ["k8s-master-001"]
 pod_network_calico: https://docs.projectcalico.org/v3.11/manifests/calico.yaml
+
+# worker default values
+kubernetes_role: worker

@@ -42,6 +42,4 @@ Set variables in playbook for workers only
 
 ```yml
 kubernetes_role: worker
-certificate_sans: ["k8s-master-001.geek.local", "k8s-master-001"]
-pod_network_calico: https://docs.projectcalico.org/v3.11/manifests/calico.yaml
 ```
